@@ -63,7 +63,7 @@ Edit the field `acme.email` in the file `traefik-values.yaml` with a valid email
 Now, install the Traefik Ingress chart:
 
 ```sh
-helm repo add stable https://kubernetes-charts.storage.googleapis.com/
+helm repo add stable https://charts.helm.sh/stable/
 helm repo update
 helm install traefik-ingress stable/traefik -n kube-system --values traefik-values.yaml
 # Wait for the external IP to be assigned by watching the traefik service (CTRL+C to exit)
